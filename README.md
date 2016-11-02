@@ -1,2 +1,2 @@
-# dotfile
-My linux config
+# MUCHZER Dotfile
+I will update this later.
