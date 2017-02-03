@@ -1,2 +1,6 @@
 # MUCHZER Dotfile
-I will update this later.
+Easy to install 
+Just use the install script
+```bash
+./install.sh
+```
