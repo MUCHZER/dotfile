@@ -2,17 +2,26 @@
 
 echo 'Installing packages...'
 ### packages install
-sudo pacman -Syu vim zsh oh-my-zsh-git antigen-git firefox git visual-studio-code deluge spotify vlc
+sudo pacman -Syu git vim vlc yaourt firefox zsh
+yaourt -S antigen-git oh-my-zsh-git visual-studio-code sublime-text-dev spotify deluge
 
 echo 'Configurating vim&zsh'
 ### Config setup
+
+echo 'Backup creation...'
 mkdir $HOME/.defaultconf
-
 mv $HOME/.vimrc $HOME/.defaultconf/.vimrc
-cp vimrc $HOME/.vimrc
-
 mv $HOME/.zshrc $HOME/.defaultconf/.zshrc
+
+echo 'Downloading configs'
+wget -qnc https://raw.githubusercontent.com/MUCHZER/dotfile/master/vimrc
+wget -qnc https://raw.githubusercontent.com/MUCHZER/dotfile/master/zshrc
+echo 'Downloaded!'
+echo 'Copying configs'
 cp zshrc $HOME/.zshrc
+cp vimrc $HOME/.vimrc
+rm vimrc
+rm zshrc
 
 echo 'Finished!'
 exit 0
