@@ -26,8 +26,8 @@ rm zshrc
 echo 'Yarn global config'
 mkdir $HOME/.yarn-global
 yarn config set prefix $HOME/.yarn-global
-echo "export PATH="$PATH:yarn global bin"" >> $HOME/.zshrc
-echo "export PATH="$PATH:yarn global bin"" >> $HOME/.bashrc
+echo "export PATH=\"$PATH:yarn global bin\"" >> $HOME/.zshrc
+echo "export PATH=\"$PATH:yarn global bin\"" >> $HOME/.bashrc
 echo "Yarn ready!"
 
 echo "Reloading bash"
