@@ -2,7 +2,7 @@
 
 echo 'Installing packages...'
 ### packages install
-sudo pacman -Syu git vim vlc yaourt firefox zsh
+sudo pacman -Syu git vim vlc yaourt firefox nodejs npm zsh
 yaourt -S yarn antigen-git oh-my-zsh-git visual-studio-code sublime-text-dev spotify deluge
 
 echo 'Configurating vim&zsh'
